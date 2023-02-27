@@ -5,33 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Integration Maquette</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="screen-425max.css" />
+    <link rel="stylesheet" href="screen-640max.css" />
+    <link rel="stylesheet" href="screen-800max.css" />
+    <link rel="stylesheet" href="screen-1024max.css" />
+    <link rel="stylesheet" href="screen-1279max.css" />
+    <link rel="stylesheet" href="screen-1920max.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <p>Tinker</p>
+    <header class="header">
+      <nav class="header-logo">
+        <p><span class="yellow-letter">T</span>inker</p>
       </nav>
-      <nav>
-        <a href="">HOME</a>
-        <a href="">ABOUT US</a>
-        <a href="">PORTFOLIO</a>
-        <a href="">BLOG</a>
-        <a href="">CONTACT US</a>
+      <nav class="header-nav">
+        <a class="page-links" href="#home">HOME</a>
+        <a class="page-links" href="#about">ABOUT US</a>
+        <a class="page-links" href="#portfolio">PORTFOLIO</a>
+        <a class="page-links" href="#blog">BLOG</a>
+        <a class="page-links" href="#contact">CONTACT US</a>
       </nav>
+      <img
+        class="menu-icon"
+        src="./assets/icons8-menu-arrondi-50.png"
+        alt="icone du menu"
+        srcset=""
+      />
     </header>
     <main>
-      <section>
-        <h1>Awesome HTML5 Template TINKER</h1>
+      <section id="home" class="home">
+        <h1>
+          Awesome <span class="blue">HTML5</span> Template
+          <span>TINKER</span>
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
           quis laboriosam deserunt repellendus aspernatur. Aliquid impedit ipsa
           doloremque quisquam, temporibus, iure voluptates dolore itaque modi
           ipsum ipsam! Laudantium, exercitationem facilis!
         </p>
-        <button>LET'S START</button>
+        <button class="start-button">LET'S START</button>
       </section>
-      <section>
+      <section id="about" class="features">
         <div>
+          <div class="circle">
+            <img
+              src="./assets/service_icon_01.png"
+              alt="cercle contenant une cloche"
+            />
+          </div>
           <h3>Smart Alerts Updated</h3>
           <hr />
           <p>
@@ -40,9 +69,15 @@
             fuga laudantium ut ad voluptates autem facilis excepturi quisquam
             eligendi, porro quae soluta voluptatum. Dolor!
           </p>
-          <button>CONTINUE READING</button>
+          <button class="blue-button features-button">CONTINUE READING</button>
         </div>
         <div>
+          <div class="circle">
+            <img
+              src="./assets/service_icon_02.png"
+              alt="cercle contenant un coeur"
+            />
+          </div>
           <h3>Lovely HTML5 Layout</h3>
           <hr />
           <p>
@@ -51,9 +86,15 @@
             fuga laudantium ut ad voluptates autem facilis excepturi quisquam
             eligendi, porro quae soluta voluptatum. Dolor!
           </p>
-          <button>CONTINUE READING</button>
+          <button class="blue-button features-button">CONTINUE READING</button>
         </div>
         <div>
+          <div class="circle">
+            <img
+              src="./assets/service_icon_03.png"
+              alt="cercle contenant une horloge"
+            />
+          </div>
           <h3>Always CSS Ready</h3>
           <hr />
           <p>
@@ -62,9 +103,15 @@
             fuga laudantium ut ad voluptates autem facilis excepturi quisquam
             eligendi, porro quae soluta voluptatum. Dolor!
           </p>
-          <button>CONTINUE READING</button>
+          <button class="blue-button features-button">CONTINUE READING</button>
         </div>
         <div>
+          <div class="circle">
+            <img
+              src="./assets/service_icon_04.png"
+              alt="cercle contenant un engrenage"
+            />
+          </div>
           <h3>One-Click</h3>
           <hr />
           <p>
@@ -73,69 +120,64 @@
             fuga laudantium ut ad voluptates autem facilis excepturi quisquam
             eligendi, porro quae soluta voluptatum. Dolor!
           </p>
-          <button>CONTINUE READING</button>
+          <button class="blue-button features-button">CONTINUE READING</button>
         </div>
       </section>
-      <section>
-        <div>
+      <section id="portfolio" class="gallery">
+        <div class="gallery-text">
           <div>
             <h2>OUR GALLERY</h2>
             <hr />
+          </div>
+          <div>
             <p>Chia hot chicken la croix uhg vaporwave kinfolk</p>
-          </div>
-          <div>
-            <h3>Show all</h3>
-            <h3>Branding</h3>
-            <h3>Graphic</h3>
-            <h3>Nature</h3>
-            <h3>Animation</h3>
+            <p>Show all</p>
+            <p>Branding</p>
+            <p>Graphic</p>
+            <p>Nature</p>
+            <p>Animation</p>
           </div>
         </div>
-        <div>
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
+        <div class="gallery-images">
+          <img src="./assets/portfolio_item_01.jpg" alt="personne " srcset="" />
+          <img src="./assets/portfolio_item_02.jpg" alt="" srcset="" />
+          <img src="./assets/portfolio_item_03.jpg" alt="" srcset="" />
+          <img src="./assets/portfolio_item_04.jpg" alt="" srcset="" />
+          <img src="./assets/portfolio_item_05.jpg" alt="" srcset="" />
+          <img src="./assets/portfolio_item_06.jpg" alt="" srcset="" />
         </div>
       </section>
-      <section>
-        <div>
-          <p>
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            eveniet vero perspiciatis dolores optio! Repudiandae ab soluta,
-            officiis cumque sint enim dolorem! Consequatur possimus, debitis
-            dignissimos nesciunt repellendus sequi numquam."
-          </p>
-        </div>
-        <div>
-          <h3>Richard Beal</h3>
-          <p>CSS Developer</p>
-          <div>
-            <!--Mettre les points ici-->
-          </div>
+      <section class="quote">
+        <p class="quote-text">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          eveniet vero perspiciatis dolores optio! Repudiandae ab soluta,
+          officiis cumque sint enim dolorem!"
+        </p>
+        <h3>Richard Beal</h3>
+        <p>CSS Developer</p>
+        <div class="circle-container">
+          <div class="tiny-circle"></div>
+          <div class="tiny-circle"></div>
+          <div class="tiny-circle"></div>
+          <div class="tiny-circle"></div>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h2>OUR BLOG POSTS</h2>
-            <hr />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div>
-            <button>Lorem Ipsum Dolor sit</button>
-            <button>Quisque Ultricies Maximus</button>
-            <button>Sed Vel Elit Et Lorem</button>
-            <button>Vivamus Purus Neque</button>
-          </div>
+      <section id="blog" class="blog">
+        <div class="blog-top">
+          <h2>OUR BLOG POSTS</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <hr />
         </div>
-        <div>
-          <img src="" alt="" srcset="" />
+        <div class="blog-article">
+          <img
+            class="blog-image"
+            src="./assets/blog_item_01.jpg"
+            alt="un couple marchant sur le trottoire"
+            srcset=""
+          />
           <div>
             <h3>Lorem ipsum dolo sit amet</h3>
-            <p>Digital Marketing / John / 22 September 2017</p>
+            <p class="blue">Digital Marketing / John / 22 September 2017</p>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
               enim saepe repellendus consectetur corporis accusantium nihil et
@@ -144,8 +186,14 @@
             </p>
           </div>
         </div>
+        <nav class="blog-bottom">
+          <button>Lorem Ipsum Dolor sit</button>
+          <button>Quisque Ultricies Maximus</button>
+          <button>Sed Vel Elit Et Lorem</button>
+          <button>Vivamus Purus Neque</button>
+        </nav>
       </section>
-      <section>
+      <section id="contact" class="contact">
         <h2>CONTACT US</h2>
         <hr />
         <p>
@@ -154,30 +202,52 @@
           atque fuga laboriosam. Est perferendis molestias facere debitis minima
           molestiae laborum. Aliquid?
         </p>
-        <button>SEND US A MESSAGE</button>
+        <button class="blue-button">SEND US A MESSAGE</button>
       </section>
-      <section><img src="" alt="" srcset="" /></section>
+      <section>
+        <img
+          class="map"
+          src="./assets/google maps.png"
+          alt="google map"
+          srcset=""
+        />
+      </section>
     </main>
     <footer>
-      <div>
-        <h3>TINKER</h3>
-        <p>Copyright © 2017 Your Company | Design: templatemo</p>
-      </div>
-      <div>
-        <p>LOCATION</p>
-        <p>MORE INFO</p>
-        <p>GET SOCIAL WITH US</p>
+      <h3><span class="yellow-letter">T</span>INKER</h3>
+      <div class="location">
         <div>
+          <h4>LOCATION</h4>
           <p>30 Raffles Ave, Singapore 039803</p>
           <hr />
           <p>1 Republic Blvd, Singapore 038975</p>
         </div>
         <div>
+          <h4>MORE INFO</h4>
           <p>Phone: 010-020-0340</p>
           <p>Email: tk@company.co</p>
         </div>
-        <div><!-- Mettre les icones réseaux sociaux--></div>
       </div>
+
+      <div class="icon-container">
+        <h4>GET SOCIAL WITH US</h4>
+        <div class="icons">
+          <img src="./assets/icons8-facebook-64.png" alt="logo de Facebook" />
+        </div>
+        <div class="icons">
+          <img src="./assets/icons8-linkedin-2-30.png" alt="logo de LinkedIn" />
+        </div>
+        <div class="icons">
+          <img src="./assets/icons8-twitter-30.png" alt="logo de Twitter" />
+        </div>
+        <div class="icons">
+          <img src="./assets/icons8-basketball-26.png" alt="Logo ball" />
+        </div>
+      </div>
+      <p>
+        Copyright © 2017 Your Company | Design:
+        <span class="yellow-letter">templatemo</span>
+      </p>
     </footer>
   </body>
 </html>
