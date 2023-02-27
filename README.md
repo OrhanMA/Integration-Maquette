@@ -1,2 +1,2 @@
-# Integration-Maquette
-Intégration de la maquette Figma
+# Integration-Maquettte
+Intégration d'une maquette Figma
