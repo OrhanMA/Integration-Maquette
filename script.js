@@ -4,11 +4,9 @@ const menuIcon = document.querySelector(".dropdown");
 const navLinks = document.querySelector(".header-nav");
 navLinks.style.display = "none";
 menuIcon.addEventListener("click", () => {
-  const navLinks = document.querySelector(".header-nav");
   console.log("clicked");
   if (navLinks.style.display === "none") {
     navLinks.style.display = "block";
-    navLinks.style.transition = "all 2s ease";
   } else {
     navLinks.style.display = "none";
   }
@@ -27,4 +25,43 @@ surprise2.addEventListener("click", () => {
 const retourTop = document.querySelector(".header-logo");
 retourTop.addEventListener("click", () => {
   window.scrollTo(0, 0);
+});
+
+let className = "inverted";
+let scrollTrigger = 60;
+
+let header = document.querySelector(".header");
+let desktopNav = document.getElementsByClassName("desktop-nav-links");
+let headerLogo = document.querySelector(".header-logo");
+let hamburger = document.querySelector(".menu-icon");
+let headerNavText = document.querySelectorAll(".page-links");
+
+document.addEventListener("scroll", function () {
+  // Get the scroll position
+  let scrollPos = window.pageYOffset;
+
+  if (scrollPos > 100) {
+    header.style.backgroundColor = "white";
+    for (let i = 0; i < desktopNav.length; i++) {
+      desktopNav[i].style.color = "black";
+    }
+    headerLogo.style.color = "black";
+    hamburger.style.backgroundColor = "black";
+    hamburger.style.borderRadius = "5px";
+    navLinks.style.backgroundColor = "white";
+    for (let i = 0; i < headerNavText.length; i++) {
+      headerNavText[i].style.color = "black";
+    }
+  } else {
+    header.style.backgroundColor = "";
+    for (let i = 0; i < desktopNav.length; i++) {
+      desktopNav[i].style.color = "white";
+    }
+    headerLogo.style.color = "white";
+    hamburger.style.backgroundColor = "";
+    navLinks.style.backgroundColor = "#444444";
+    for (let i = 0; i < headerNavText.length; i++) {
+      headerNavText[i].style.color = "white";
+    }
+  }
 });
