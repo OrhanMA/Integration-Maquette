@@ -45,4 +45,11 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .contact > * {
+    max-width: 50%;
+  }
+  .contact > button {
+    padding: 1em;
+    font-size: 1.5rem;
+  }
 }

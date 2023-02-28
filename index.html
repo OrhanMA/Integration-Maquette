@@ -27,7 +27,7 @@
   <body>
     <header class="header">
       <nav class="header-logo">
-        <p><span class="yellow-letter">T</span>inker</p>
+        <p class="cliquable"><span class="yellow-letter">T</span>inker</p>
       </nav>
       <nav class="desktop-nav">
         <a href="#home">HOME</a>
@@ -45,6 +45,7 @@
         />
       </div>
     </header>
+    <!-- Ce nav est caché par défaut, utiliser le hamburger menu pour l'afficher -->
     <nav class="header-nav">
       <ul>
         <li>
@@ -70,7 +71,7 @@
           doloremque quisquam, temporibus, iure voluptates dolore itaque modi
           ipsum ipsam! Laudantium, exercitationem facilis!
         </p>
-        <button class="start-button">LET'S START</button>
+        <button class="start-button cliquable surprise-1">LET'S START</button>
       </section>
       <section id="about" class="features">
         <div class="features-unit">
@@ -90,7 +91,7 @@
               fuga laudantium ut ad voluptates autem facilis excepturi quisquam
               eligendi, porro quae soluta voluptatum. Dolor!
             </p>
-            <button class="blue-button features-button">
+            <button class="blue-button features-button cliquable">
               CONTINUE READING
             </button>
           </div>
@@ -112,7 +113,7 @@
               fuga laudantium ut ad voluptates autem facilis excepturi quisquam
               eligendi, porro quae soluta voluptatum. Dolor!
             </p>
-            <button class="blue-button features-button">
+            <button class="blue-button features-button cliquable">
               CONTINUE READING
             </button>
           </div>
@@ -133,7 +134,7 @@
               fuga laudantium ut ad voluptates autem facilis excepturi quisquam
               eligendi, porro quae soluta voluptatum. Dolor!
             </p>
-            <button class="blue-button features-button">
+            <button class="blue-button features-button cliquable">
               CONTINUE READING
             </button>
           </div>
@@ -154,7 +155,7 @@
               fuga laudantium ut ad voluptates autem facilis excepturi quisquam
               eligendi, porro quae soluta voluptatum. Dolor!
             </p>
-            <button class="blue-button features-button">
+            <button class="blue-button features-button cliquable">
               CONTINUE READING
             </button>
           </div>
@@ -167,12 +168,14 @@
             <hr />
           </div>
           <div>
-            <p>Chia hot chicken la croix uhg vaporwave kinfolk</p>
-            <p class="yellow-letter">Show all</p>
-            <p>Branding</p>
-            <p>Graphic</p>
-            <p>Nature</p>
-            <p>Animation</p>
+            <p class="cliquable">
+              Chia hot chicken la croix uhg vaporwave kinfolk
+            </p>
+            <p class="yellow-letter cliquable">Show all</p>
+            <p class="cliquable">Branding</p>
+            <p class="cliquable">Graphic</p>
+            <p class="cliquable">Nature</p>
+            <p class="cliquable">Animation</p>
           </div>
         </div>
         <div class="gallery-images">
@@ -231,10 +234,12 @@
             <hr />
           </div>
           <nav class="blog-nav">
-            <button class="yellow-letter">Lorem Ipsum Dolor sit</button>
-            <button>Quisque Ultricies Maximus</button>
-            <button>Sed Vel Elit Et Lorem</button>
-            <button>Vivamus Purus Neque</button>
+            <button class="yellow-letter cliquable">
+              Lorem Ipsum Dolor sit
+            </button>
+            <button class="cliquable">Quisque Ultricies Maximus</button>
+            <button class="cliquable">Sed Vel Elit Et Lorem</button>
+            <button class="cliquable">Vivamus Purus Neque</button>
           </nav>
         </div>
 
@@ -266,7 +271,7 @@
           atque fuga laboriosam. Est perferendis molestias facere debitis minima
           molestiae laborum. Aliquid?
         </p>
-        <button class="blue-button">SEND US A MESSAGE</button>
+        <button class="blue-button cliquable">SEND US A MESSAGE</button>
       </section>
       <section class="google-maps">
         <img
@@ -278,34 +283,36 @@
       </section>
     </main>
     <footer>
-      <h3><span class="yellow-letter">T</span>INKER</h3>
+      <h3 class="cliquable surprise-2">
+        <span class="yellow-letter">T</span>INKER
+      </h3>
       <div class="location">
         <h4>LOCATION</h4>
-        <p>30 Raffles Ave, Singapore 039803</p>
+        <p class="cliquable">30 Raffles Ave, Singapore 039803</p>
         <hr />
-        <p>1 Republic Blvd, Singapore 038975</p>
+        <p class="cliquable">1 Republic Blvd, Singapore 038975</p>
       </div>
       <div class="info">
         <h4>MORE INFO</h4>
-        <p>Phone: 010-020-0340</p>
-        <p>Email: tk@company.co</p>
+        <p class="cliquable">Phone: 010-020-0340</p>
+        <p class="cliquable">Email: tk@company.co</p>
       </div>
       <div class="social">
         <h4>GET SOCIAL WITH US</h4>
-        <div class="icon-container">
+        <div class="icon">
           <img
             src="./assets/icons8-facebook-64.png"
             width="30"
             alt="logo de Facebook"
           />
         </div>
-        <div class="icons">
+        <div class="icon">
           <img src="./assets/icons8-linkedin-2-30.png" alt="logo de LinkedIn" />
         </div>
-        <div class="icons">
+        <div class="icon">
           <img src="./assets/icons8-twitter-30.png" alt="logo de Twitter" />
         </div>
-        <div class="icons">
+        <div class="icon">
           <img src="./assets/icons8-basketball-26.png" alt="Logo ball" />
         </div>
       </div>

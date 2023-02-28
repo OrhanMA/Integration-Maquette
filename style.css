@@ -10,6 +10,21 @@ a {
   color: white;
 }
 
+.icon:hover {
+  cursor: pointer;
+}
+a:hover {
+  color: #60c5d2;
+}
+.cliquable:hover {
+  cursor: pointer;
+}
+
+.info > p:hover,
+.location > p:hover {
+  color: #60c5d2;
+  cursor: grab;
+}
 .yellow-letter {
   color: #ffc700;
 }
@@ -20,6 +35,10 @@ a {
 
 main {
   width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
 }
 @import url("./header.css");
 @import url("./home.css");
