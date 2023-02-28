@@ -8,16 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="screen-425max.css" />
-    <link rel="stylesheet" href="screen-640max.css" />
-    <link rel="stylesheet" href="screen-800max.css" />
-    <link rel="stylesheet" href="screen-1024max.css" />
-    <link rel="stylesheet" href="screen-1279max.css" />
-    <link rel="stylesheet" href="screen-1920max.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="features.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="quote.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="map.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -25,25 +29,40 @@
       <nav class="header-logo">
         <p><span class="yellow-letter">T</span>inker</p>
       </nav>
-      <nav class="header-nav">
-        <a class="page-links" href="#home">HOME</a>
-        <a class="page-links" href="#about">ABOUT US</a>
-        <a class="page-links" href="#portfolio">PORTFOLIO</a>
-        <a class="page-links" href="#blog">BLOG</a>
-        <a class="page-links" href="#contact">CONTACT US</a>
+      <nav class="desktop-nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#blog">BLOG</a>
+        <a href="#contact">CONTACT</a>
       </nav>
-      <img
-        class="menu-icon"
-        src="./assets/icons8-menu-arrondi-50.png"
-        alt="icone du menu"
-        srcset=""
-      />
+      <div class="dropdown">
+        <img
+          class="menu-icon"
+          src="./assets/icons8-menu-arrondi-50.png"
+          alt="menu icon"
+          srcset=""
+        />
+      </div>
     </header>
+    <nav class="header-nav">
+      <ul>
+        <li>
+          <a class="page-links" href="#home">HOME</a>
+        </li>
+        <li>
+          <a class="page-links" href="#about">ABOUT US</a>
+        </li>
+        <li><a class="page-links" href="#portfolio">PORTFOLIO</a></li>
+        <li><a class="page-links" href="#blog">BLOG</a></li>
+        <li><a class="page-links" href="#contact">CONTACT US</a></li>
+      </ul>
+    </nav>
     <main>
       <section id="home" class="home">
         <h1>
           Awesome <span class="blue">HTML5</span> Template
-          <span>TINKER</span>
+          <span class="h1-tinker">TINKER</span>
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
@@ -54,73 +73,91 @@
         <button class="start-button">LET'S START</button>
       </section>
       <section id="about" class="features">
-        <div>
+        <div class="features-unit">
           <div class="circle">
             <img
               src="./assets/service_icon_01.png"
               alt="cercle contenant une cloche"
             />
           </div>
-          <h3>Smart Alerts Updated</h3>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
-            necessitatibus temporibus blanditiis consectetur perspiciatis vel
-            fuga laudantium ut ad voluptates autem facilis excepturi quisquam
-            eligendi, porro quae soluta voluptatum. Dolor!
-          </p>
-          <button class="blue-button features-button">CONTINUE READING</button>
+
+          <div class="features-text">
+            <h3>Smart Alerts Updated</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              necessitatibus temporibus blanditiis consectetur perspiciatis vel
+              fuga laudantium ut ad voluptates autem facilis excepturi quisquam
+              eligendi, porro quae soluta voluptatum. Dolor!
+            </p>
+            <button class="blue-button features-button">
+              CONTINUE READING
+            </button>
+          </div>
         </div>
-        <div>
+
+        <div class="features-unit">
           <div class="circle">
             <img
               src="./assets/service_icon_02.png"
               alt="cercle contenant un coeur"
             />
           </div>
-          <h3>Lovely HTML5 Layout</h3>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
-            necessitatibus temporibus blanditiis consectetur perspiciatis vel
-            fuga laudantium ut ad voluptates autem facilis excepturi quisquam
-            eligendi, porro quae soluta voluptatum. Dolor!
-          </p>
-          <button class="blue-button features-button">CONTINUE READING</button>
+          <div class="features-text">
+            <h3>Lovely HTML5 Layout</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              necessitatibus temporibus blanditiis consectetur perspiciatis vel
+              fuga laudantium ut ad voluptates autem facilis excepturi quisquam
+              eligendi, porro quae soluta voluptatum. Dolor!
+            </p>
+            <button class="blue-button features-button">
+              CONTINUE READING
+            </button>
+          </div>
         </div>
-        <div>
+        <div class="features-unit">
           <div class="circle">
             <img
               src="./assets/service_icon_03.png"
               alt="cercle contenant une horloge"
             />
           </div>
-          <h3>Always CSS Ready</h3>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
-            necessitatibus temporibus blanditiis consectetur perspiciatis vel
-            fuga laudantium ut ad voluptates autem facilis excepturi quisquam
-            eligendi, porro quae soluta voluptatum. Dolor!
-          </p>
-          <button class="blue-button features-button">CONTINUE READING</button>
+          <div class="features-text">
+            <h3>Always CSS Ready</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              necessitatibus temporibus blanditiis consectetur perspiciatis vel
+              fuga laudantium ut ad voluptates autem facilis excepturi quisquam
+              eligendi, porro quae soluta voluptatum. Dolor!
+            </p>
+            <button class="blue-button features-button">
+              CONTINUE READING
+            </button>
+          </div>
         </div>
-        <div>
+        <div class="features-unit">
           <div class="circle">
             <img
               src="./assets/service_icon_04.png"
               alt="cercle contenant un engrenage"
             />
           </div>
-          <h3>One-Click</h3>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
-            necessitatibus temporibus blanditiis consectetur perspiciatis vel
-            fuga laudantium ut ad voluptates autem facilis excepturi quisquam
-            eligendi, porro quae soluta voluptatum. Dolor!
-          </p>
-          <button class="blue-button features-button">CONTINUE READING</button>
+          <div class="features-text">
+            <h3>One-Click</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              necessitatibus temporibus blanditiis consectetur perspiciatis vel
+              fuga laudantium ut ad voluptates autem facilis excepturi quisquam
+              eligendi, porro quae soluta voluptatum. Dolor!
+            </p>
+            <button class="blue-button features-button">
+              CONTINUE READING
+            </button>
+          </div>
         </div>
       </section>
       <section id="portfolio" class="gallery">
@@ -131,7 +168,7 @@
           </div>
           <div>
             <p>Chia hot chicken la croix uhg vaporwave kinfolk</p>
-            <p>Show all</p>
+            <p class="yellow-letter">Show all</p>
             <p>Branding</p>
             <p>Graphic</p>
             <p>Nature</p>
@@ -139,12 +176,36 @@
           </div>
         </div>
         <div class="gallery-images">
-          <img src="./assets/portfolio_item_01.jpg" alt="personne " srcset="" />
-          <img src="./assets/portfolio_item_02.jpg" alt="" srcset="" />
-          <img src="./assets/portfolio_item_03.jpg" alt="" srcset="" />
-          <img src="./assets/portfolio_item_04.jpg" alt="" srcset="" />
-          <img src="./assets/portfolio_item_05.jpg" alt="" srcset="" />
-          <img src="./assets/portfolio_item_06.jpg" alt="" srcset="" />
+          <img
+            src="./assets/portfolio_item_01.jpg"
+            alt="personne déjeunant en lisant "
+            srcset=""
+          />
+          <img
+            src="./assets/portfolio_item_02.jpg"
+            alt="un escalier"
+            srcset=""
+          />
+          <img
+            src="./assets/portfolio_item_03.jpg"
+            alt="une paire de lunettes sur un ordinateur"
+            srcset=""
+          />
+          <img
+            src="./assets/portfolio_item_04.jpg"
+            alt="une salade de fruits"
+            srcset=""
+          />
+          <img
+            src="./assets/portfolio_item_05.jpg"
+            alt="une saladede fruits"
+            srcset=""
+          />
+          <img
+            src="./assets/portfolio_item_06.jpg"
+            alt="un bureau et une chaise"
+            srcset=""
+          />
         </div>
       </section>
       <section class="quote">
@@ -163,11 +224,20 @@
         </div>
       </section>
       <section id="blog" class="blog">
-        <div class="blog-top">
-          <h2>OUR BLOG POSTS</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <hr />
+        <div class="blog-text">
+          <div class="blog-title">
+            <h2>OUR BLOG POSTS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr />
+          </div>
+          <nav class="blog-nav">
+            <button class="yellow-letter">Lorem Ipsum Dolor sit</button>
+            <button>Quisque Ultricies Maximus</button>
+            <button>Sed Vel Elit Et Lorem</button>
+            <button>Vivamus Purus Neque</button>
+          </nav>
         </div>
+
         <div class="blog-article">
           <img
             class="blog-image"
@@ -178,7 +248,7 @@
           <div>
             <h3>Lorem ipsum dolo sit amet</h3>
             <p class="blue">Digital Marketing / John / 22 September 2017</p>
-            <p>
+            <p class="gray-text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
               enim saepe repellendus consectetur corporis accusantium nihil et
               culpa, est ex nemo dolorum itaque asperiores. Nulla illum et
@@ -186,12 +256,6 @@
             </p>
           </div>
         </div>
-        <nav class="blog-bottom">
-          <button>Lorem Ipsum Dolor sit</button>
-          <button>Quisque Ultricies Maximus</button>
-          <button>Sed Vel Elit Et Lorem</button>
-          <button>Vivamus Purus Neque</button>
-        </nav>
       </section>
       <section id="contact" class="contact">
         <h2>CONTACT US</h2>
@@ -204,7 +268,7 @@
         </p>
         <button class="blue-button">SEND US A MESSAGE</button>
       </section>
-      <section>
+      <section class="google-maps">
         <img
           class="map"
           src="./assets/google maps.png"
@@ -216,23 +280,24 @@
     <footer>
       <h3><span class="yellow-letter">T</span>INKER</h3>
       <div class="location">
-        <div>
-          <h4>LOCATION</h4>
-          <p>30 Raffles Ave, Singapore 039803</p>
-          <hr />
-          <p>1 Republic Blvd, Singapore 038975</p>
-        </div>
-        <div>
-          <h4>MORE INFO</h4>
-          <p>Phone: 010-020-0340</p>
-          <p>Email: tk@company.co</p>
-        </div>
+        <h4>LOCATION</h4>
+        <p>30 Raffles Ave, Singapore 039803</p>
+        <hr />
+        <p>1 Republic Blvd, Singapore 038975</p>
       </div>
-
-      <div class="icon-container">
+      <div class="info">
+        <h4>MORE INFO</h4>
+        <p>Phone: 010-020-0340</p>
+        <p>Email: tk@company.co</p>
+      </div>
+      <div class="social">
         <h4>GET SOCIAL WITH US</h4>
-        <div class="icons">
-          <img src="./assets/icons8-facebook-64.png" alt="logo de Facebook" />
+        <div class="icon-container">
+          <img
+            src="./assets/icons8-facebook-64.png"
+            width="30"
+            alt="logo de Facebook"
+          />
         </div>
         <div class="icons">
           <img src="./assets/icons8-linkedin-2-30.png" alt="logo de LinkedIn" />

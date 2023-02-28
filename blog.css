@@ -1,0 +1,82 @@
+.blog {
+  background: url(./assets/blog-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog,
+.blog-title,
+.blog-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-text {
+  text-align: center;
+}
+
+.blog-title > h2,
+.blog-title > p {
+  width: 70%;
+}
+
+.blog-title > hr {
+  width: 90%;
+}
+.blog-title {
+  color: white;
+}
+
+.blog-nav {
+  margin-top: 1rem;
+}
+.blog-nav > button {
+  background-color: white;
+  border: none;
+  width: 75%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.blog-article > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.gray-text {
+  color: #94a3b8;
+}
+.blog-article {
+  width: 90%;
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.blog-image,
+.blog-nav {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .blog-text {
+    max-width: 30%;
+  }
+  .blog-article {
+    max-width: 50%;
+  }
+}

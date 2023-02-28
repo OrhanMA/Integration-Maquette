@@ -1,0 +1,139 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: url("./assets/about-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 5%;
+}
+
+.circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgb(255, 217, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+.circle > img {
+  max-width: 70%;
+}
+
+.features-unit {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+.features-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.features-text > button {
+  color: white;
+  background-color: #60c5d2;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem;
+  font-weight: bold;
+  max-width: 60%;
+}
+.features-text > h3 {
+  font-size: 1.5rem;
+}
+.features-text > hr {
+  display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .features {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-y: scroll;
+  }
+  .features-unit {
+    min-width: 90%;
+    padding-left: 0;
+  }
+
+  .circle {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .features {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+  }
+
+  .features-unit {
+    min-width: 90%;
+    padding-left: 3rem;
+  }
+
+  .circle {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .features {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+  }
+
+  .features-unit {
+    min-width: 90%;
+    padding-left: 3rem;
+  }
+
+  .circle {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features-unit {
+    max-width: 30%;
+    padding-left: 3rem;
+  }
+
+  .features-text {
+    font-size: 1.2rem;
+  }
+  .features-text > button {
+    font-size: 1rem;
+    padding: 1em;
+  }
+
+  .circle {
+    width: 8rem;
+    height: 8rem;
+  }
+}

@@ -1,0 +1,48 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #444444;
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.contact > * {
+  text-align: center;
+  max-width: 90%;
+  font-weight: 400;
+}
+
+.contact > h2 {
+  font-weight: bold;
+}
+
+.contact > hr {
+  width: 100%;
+  margin: 1rem;
+}
+
+.contact > button {
+  padding: 1em;
+  background-color: #60c5d2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin: 2rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact > * {
+    max-width: 70%;
+  }
+  .contact > button {
+    padding: 2em;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+}

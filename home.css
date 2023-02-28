@@ -1,0 +1,62 @@
+.home {
+  background: url("./assets/banner_bg.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.home > h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.home > p {
+  font-size: 1.2rem;
+  margin: 5rem;
+}
+
+.blue {
+  color: #60c5d2;
+}
+
+.h1-tinker {
+  color: #e39144;
+}
+
+.start-button {
+  background-color: white;
+  padding: 1em;
+  color: black;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .home > h1 {
+    font-size: 3rem;
+  }
+  .home > p {
+    font-size: 1.5rem;
+    max-width: 60%;
+  }
+  .start-button {
+    width: 25%;
+    max-width: 400px;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .home {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+  }
+}

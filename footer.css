@@ -1,0 +1,77 @@
+.location > p,
+.info > p {
+  font-size: 0.75rem;
+}
+
+.location > h4,
+.info > h4,
+.social > h4 {
+  font-size: 0.75em;
+}
+
+footer > h3 {
+  font-size: 1.5rem;
+}
+
+footer > * {
+  padding: 0;
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.location > hr {
+  width: 30%;
+}
+
+footer {
+  text-align: center;
+  background-color: #444444;
+  color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .social > h4 {
+    display: none;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer > * {
+    max-width: 20%;
+    margin: 2rem;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .social > h4 {
+    display: none;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer > * {
+    max-width: 20%;
+    margin: 2rem;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+  footer > h3 {
+    font-size: 2.5rem;
+  }
+}
