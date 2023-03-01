@@ -7,15 +7,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
-  padding: 5%;
 }
 
 .circle {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background-color: rgb(255, 217, 0);
+  background-color: rgba(251, 209, 60, 0.968);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,17 +28,14 @@
 
 .features-unit {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   align-items: center;
-  margin: 2rem;
 }
 
 .features-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 95%;
 }
 
 .features-text > button {
@@ -48,7 +45,7 @@
   border-radius: 25px;
   padding: 0.5rem;
   font-weight: bold;
-  max-width: 60%;
+  /* max-width: 60%; */
 }
 .features-text > h3 {
   font-size: 1.5rem;
@@ -57,83 +54,134 @@
   display: none;
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .features {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    overflow-y: scroll;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
   }
   .features-unit {
-    min-width: 90%;
-    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
   }
 
+  .features-text > h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .features-text > hr {
+    display: block;
+    width: 100%;
+    opacity: 30%;
+  }
+
+  .features-text > p {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+
+  .features-text > button {
+    font-size: 0.7rem;
+    padding: 0.95rem;
+    font-weight: 600;
+    width: 20%;
+  }
   .circle {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .features {
-    display: flex;
-    flex-direction: row;
-    overflow-y: scroll;
-  }
-
-  .features-unit {
-    min-width: 90%;
-    padding-left: 3rem;
-  }
-
-  .circle {
-    width: 8rem;
-    height: 8rem;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .features {
-    display: flex;
-    flex-direction: row;
-    overflow-y: scroll;
-  }
-
-  .features-unit {
-    min-width: 90%;
-    padding-left: 3rem;
-  }
-
-  .circle {
-    width: 8rem;
-    height: 8rem;
-  }
-}
-
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .features {
+    height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    padding: 15% 10% 15% 10%;
+  }
+  .features-unit {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .features-text > h3 {
+    font-size: 1rem;
+  }
+  .features-text > p {
+    font-size: 0.8rem;
+  }
+  .features-text hr {
+    display: block;
+    width: 90%;
+  }
+  .features-text button {
+    font-size: 0.75rem;
+    width: 35%;
+  }
+  .circle {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1920px) {
+  .features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
   }
 
   .features-unit {
-    max-width: 30%;
-    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 15%;
+
+    margin: 0;
+    padding: 0;
   }
 
-  .features-text {
-    font-size: 1.2rem;
+  .features-text > hr {
+    display: block;
+    width: 95%;
+    opacity: 70%;
   }
-  .features-text > button {
-    font-size: 1rem;
-    padding: 1em;
+  .features-text > p {
+    font-size: 0.9rem;
+    line-height: 1.75em;
+  }
+  .features-text > h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .features-text button {
+    padding: 0.9rem;
+    font-weight: 500;
   }
 
   .circle {
-    width: 8rem;
-    height: 8rem;
+    width: 6.5rem;
+    height: 6.5rem;
   }
 }

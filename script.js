@@ -42,11 +42,12 @@ document.addEventListener("scroll", function () {
 
   if (scrollPos > 100) {
     header.style.backgroundColor = "white";
+    header.style.boxShadow = "0px 0px 8px rgba(0, 0, 0, 0.6)";
     for (let i = 0; i < desktopNav.length; i++) {
       desktopNav[i].style.color = "black";
     }
     headerLogo.style.color = "black";
-    hamburger.style.backgroundColor = "black";
+    hamburger.style.backgroundColor = "#ffc700";
     hamburger.style.borderRadius = "5px";
     navLinks.style.backgroundColor = "white";
     for (let i = 0; i < headerNavText.length; i++) {
@@ -54,6 +55,7 @@ document.addEventListener("scroll", function () {
     }
   } else {
     header.style.backgroundColor = "";
+    header.style.boxShadow = "none";
     for (let i = 0; i < desktopNav.length; i++) {
       desktopNav[i].style.color = "white";
     }

@@ -1,5 +1,4 @@
 .gallery {
-  background-color: #60c5d2;
   display: flex;
   flex-direction: column;
   color: white;
@@ -7,18 +6,20 @@
 
 .gallery-text {
   text-align: center;
+  background-color: #60c5d2;
 }
 
-.gallery-text > div > hr {
-  width: 50%;
-}
+/* .gallery-text > div > hr {
+  max-width: 100%;
+} */
 
 .gallery-images {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 3rem;
+  /* gap: 3rem; */
   justify-content: center;
+  align-items: center;
   padding: 5%;
   background-color: white;
 }
@@ -28,13 +29,15 @@
   max-width: 40%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1124px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .gallery-images > img {
-    max-width: 40%;
+    max-width: 75%;
+    padding: 0;
+    margin: 0;
   }
   .gallery-images {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 0;
     gap: 2rem;
@@ -42,38 +45,131 @@
   .gallery-images {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+  .gallery-text {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+  .gallery-text > div > h2 {
+    font-size: 1.1rem;
+  }
+  .gallery-text > div > hr {
+    opacity: 50%;
+    width: 30%;
+  }
+  .gallery-text > div > p {
+    font-size: 0.85rem;
+  }
+
+  .gallery-phrase {
+    margin-bottom: 4rem;
   }
 }
 
-@media screen and (min-width: 1125px) and (max-width: 1920px) {
-  .gallery-images > img {
-    max-width: 40%;
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  .gallery-text,
+  .gallery-images {
+    max-width: 70%;
+  }
+
+  .gallery-text {
+    padding: 0 5% 0 5%;
+  }
+
+  .gallery-text hr {
+    max-width: 45%;
+    opacity: 30%;
+  }
+  .gallery-text h2 {
+    font-size: 1.1rem;
+    padding-top: 5rem;
+  }
+  .gallery-text div p {
+    font-size: 0.8rem;
+  }
+  .gallery-text div p:last-child {
+    padding-bottom: 3rem;
+  }
+  .gallery-phrase {
+    padding-bottom: 5rem;
+  }
+
   .gallery-images {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
     gap: 2rem;
-    max-width: 80%;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 1% 0 2% 0;
   }
+  .gallery-images img {
+    max-width: 45%;
+    margin-bottom: 0;
+  }
+}
 
+@media screen and (min-width: 992px) and (max-width: 1920px) {
   .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* height: 50%; */
+  }
+  .gallery-images {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 2rem;
+    width: 45%;
+  }
+  .gallery-images > img {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery-text {
+    width: 20vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    align-items: flex-end;
+    text-align: start;
+    padding: 5rem 5vw 5rem 15vw;
   }
-  .gallery > * {
-    max-width: 40%;
+
+  .gallery-text div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 50%;
   }
-  .gallery-text > div > p {
+
+  .gallery-phrase {
+    font-size: 0.75rem;
+  }
+  .gallery-text div p {
+    font-size: 0.9rem;
+    line-height: 1.5em;
+  }
+
+  .gallery-text div hr {
+    width: 10vw;
+  }
+
+  .gallery-text > div > h2 {
+    text-align: start;
     font-size: 1.5rem;
   }
 }

@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #444444;
+  background-color: #596065;
   color: white;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .contact > * {
@@ -17,11 +17,13 @@
 
 .contact > h2 {
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .contact > hr {
   width: 100%;
   margin: 1rem;
+  opacity: 50%;
 }
 
 .contact > button {
@@ -31,25 +33,36 @@
   border: none;
   border-radius: 25px;
   margin: 2rem;
-  font-weight: bold;
+  font-weight: 300;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .contact > * {
-    max-width: 70%;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contact > hr {
+    width: 50%;
   }
-  .contact > button {
-    padding: 2em;
-    font-size: 1rem;
+  .contact > p {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
-  .contact > * {
-    max-width: 50%;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    width: 100%;
   }
   .contact > button {
     padding: 1em;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
+  }
+  .contact > * {
+    max-width: 60%;
+  }
+  .contact hr {
+    max-width: 30%;
+    margin: 0.5rem;
+  }
+  .contact p {
+    font-size: 0.75rem;
+    line-height: 1.5em;
   }
 }

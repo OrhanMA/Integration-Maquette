@@ -1,7 +1,7 @@
 .quote {
   display: flex;
   flex-direction: column;
-  background-color: #facc15;
+  background-color: #f7c552;
   text-align: center;
   padding: 2rem;
   color: white;
@@ -25,36 +25,48 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 }
 
 .tiny-circle {
-  width: 15px;
-  height: 15px;
+  width: 9px;
+  height: 8px;
   border-radius: 50%;
   opacity: 60%;
   background-color: white;
-  margin: 1%;
+  padding: 0.6px;
+  margin: 5px;
 }
 
 .tiny-circle:nth-child(4) {
   opacity: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1300px) {
-  .quote-text {
-    max-width: 50%;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-  }
-  .circle-container {
-    gap: 10px;
+@media screen and (min-width: 320px) and (max-width: 767) {
+  .tiny-circle {
+    padding-bottom: 5rem;
   }
 }
 
-@media screen and (min-width: 1301px) and (max-width: 1920px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .quote {
+    padding: 10%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1920px) {
+  .quote {
+    justify-content: center;
+    height: 40vh;
+  }
   .quote-text {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
     max-width: 50%;
+  }
+  .circle-container {
+    margin-top: 2rem;
+    gap: 5px;
+  }
+  .quote-text > p {
+    font-size: 0.6rem;
   }
 }
