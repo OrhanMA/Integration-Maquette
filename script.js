@@ -67,3 +67,10 @@ document.addEventListener("scroll", function () {
     }
   }
 });
+
+if (window.innerWidth <= 385) {
+  const footerTinker = document.querySelector(".footer-tinker");
+  const copyright = document.querySelector(".copyright");
+  copyright.textContent = " Copyright © 2017 Your Company Design: templatemo";
+  footerTinker.appendChild(copyright);
+}
