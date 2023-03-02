@@ -17,7 +17,7 @@
 
 .blog-text {
   text-align: center;
-  background: rgba(0, 0, 0, 0.422);
+  background: rgba(0, 0, 0, 0.621);
 }
 
 .blog-title > h2,
@@ -97,15 +97,24 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .blog {
+  .blog-text {
+    width: 80%;
+  }
+  .blog-text button {
+    width: 100%;
+    padding: 15px;
+  }
+  .blog-text p {
     width: 100%;
   }
-  .blog-text,
   .blog-article {
-    max-width: 80%;
+    width: 75%;
+  }
+  .blog-article h3 {
+    margin: 0;
   }
   .blog-title hr {
-    opacity: 30%;
+    opacity: 70%;
   }
   .blog-title h2 {
     font-size: 1.2rem;

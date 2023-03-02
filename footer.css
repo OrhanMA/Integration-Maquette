@@ -196,13 +196,16 @@ footer {
   }
   .footer-tinker h3,
   .footer-tinker p {
-    max-width: 20%;
+    max-width: 30%;
   }
   .footer-tinker h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .footer-tinker p {
     margin: 0 0 1rem 0;
+  }
+  .footer-tinker {
+    line-height: 1.5rem;
   }
 
   .info,
@@ -216,6 +219,12 @@ footer {
 
   .location div hr {
     display: none;
+  }
+  .location div,
+  .info div {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
   }
 
   .info h4,

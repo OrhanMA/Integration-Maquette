@@ -51,8 +51,12 @@
     width: 100%;
   }
   .contact > button {
-    padding: 1em;
+    padding: 1.2em;
+    margin-bottom: 3rem;
     font-size: 0.75rem;
+  }
+  .contact h2 {
+    padding-top: 2rem;
   }
   .contact > * {
     max-width: 60%;

@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .features {
     height: 100vh;
     display: flex;
@@ -134,7 +134,9 @@
   }
   .features-text button {
     font-size: 0.75rem;
-    width: 35%;
+    width: 45%;
+    padding: 15px;
+    margin-top: 30px;
   }
   .circle {
     width: 110px;
@@ -157,7 +159,6 @@
     display: flex;
     flex-direction: column;
     max-width: 20%;
-
     margin: 0;
     padding: 0;
   }
