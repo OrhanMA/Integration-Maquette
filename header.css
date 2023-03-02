@@ -94,13 +94,15 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 45%;
   }
   .desktop-nav > a {
     padding: 10%;
   }
 
   .header {
-    padding-left: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }

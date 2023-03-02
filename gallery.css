@@ -5,7 +5,7 @@
 }
 
 .gallery-text {
-  text-align: center;
+  /* text-align: center; */
   background-color: #60c5d2;
 }
 
@@ -14,13 +14,13 @@
 } */
 
 .gallery-images {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* gap: 3rem; */
+   gap: 3rem;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 5%; */
   background-color: white;
 }
 
@@ -29,26 +29,42 @@
   max-width: 40%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .gallery-images > img {
-    max-width: 75%;
+    width: 90%;
+    max-width: 385px;
     padding: 0;
     margin: 0;
   }
   .gallery-images {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     gap: 2rem;
   }
   .gallery-images {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .gallery-text {
+    width: 100%;
+    text-align: center;
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
+  }
+  .gallery-text > div {
+    max-width: 90%;
+    margin: 0 auto;
   }
   .gallery-text > div > h2 {
     font-size: 1.1rem;
@@ -58,7 +74,7 @@
     width: 30%;
   }
   .gallery-text > div > p {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .gallery-phrase {
@@ -66,32 +82,32 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .gallery {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .gallery-text,
-  .gallery-images {
-    max-width: 70%;
+  .gallery-text {
+    max-width: 90%;
   }
 
-  .gallery-text {
+  /* .gallery-text {
     padding: 0 5% 0 5%;
-  }
+    text-align: center;
+  } */
 
   .gallery-text hr {
     max-width: 45%;
-    opacity: 30%;
+    opacity: 40%;
   }
   .gallery-text h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding-top: 5rem;
   }
   .gallery-text div p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .gallery-text div p:last-child {
     padding-bottom: 3rem;
@@ -101,11 +117,16 @@
   }
 
   .gallery-images {
+    max-width: 85%;
+  }
+
+  .gallery-images {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
-    padding: 1% 0 2% 0;
+    padding: 3% 0 2% 0;
   }
   .gallery-images img {
     max-width: 45%;
@@ -115,61 +136,41 @@
 
 @media screen and (min-width: 992px) and (max-width: 1920px) {
   .gallery {
-    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: nowrap;
-    /* height: 50%; */
+    height: 75vh;
+    width: 100%;
   }
   .gallery-images {
-    margin: 0;
-    padding: 0;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 2rem;
-    width: 45%;
+    width: 80%;
+    padding-left: 3%;
+    padding-top: 3%;
   }
   .gallery-images > img {
-    width: 50%;
+    /* margin: 0; */
+    max-width: 45%;
     margin: 0;
-    padding: 0;
   }
 
   .gallery-text {
-    width: 20vw;
-    height: 65vh;
     display: flex;
     flex-direction: column;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 2rem;
     justify-content: center;
-    align-items: flex-end;
-    text-align: start;
-    padding: 5rem 5vw 5rem 15vw;
+    max-width: 25%;
+  }
+  .gallery-text > div {
+    max-width: 60%;
   }
 
-  .gallery-text div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 50%;
+  .gallery-text div h2 {
+    font-size: 1.3rem;
   }
-
   .gallery-phrase {
-    font-size: 0.75rem;
-  }
-  .gallery-text div p {
-    font-size: 0.9rem;
-    line-height: 1.5em;
-  }
-
-  .gallery-text div hr {
-    width: 10vw;
-  }
-
-  .gallery-text > div > h2 {
-    text-align: start;
-    font-size: 1.5rem;
+    margin-bottom: 5rem;
   }
 }
