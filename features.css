@@ -87,7 +87,7 @@
   .features-text > hr {
     display: block;
     width: 100%;
-    opacity: 30%;
+    opacity: 50%;
   }
 
   .features-text > p {
@@ -99,7 +99,7 @@
     font-size: 0.7rem;
     padding: 0.95rem;
     font-weight: 600;
-    width: 6rem;
+    width: 25%;
   }
   .circle {
     width: 6rem;
