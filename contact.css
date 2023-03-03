@@ -20,6 +20,10 @@
   font-size: 1.2rem;
 }
 
+#mailto {
+  color: white;
+}
+
 .contact > hr {
   width: 100%;
   margin: 1rem;
