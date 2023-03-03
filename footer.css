@@ -277,8 +277,13 @@ footer {
 
   .footer-tinker {
     width: 10%;
+    margin-right: 10rem;
+    text-align: start;
   }
-
+  .footer-tinker h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
   .footer-tinker p {
     font-size: 0.75rem;
   }
@@ -306,6 +311,16 @@ footer {
   .location div hr {
     opacity: 50%;
     margin: 1em;
+  }
+  .location {
+    text-align: left;
+    margin-right: 3rem;
+  }
+  .info {
+    text-align: left;
+  }
+  .info h4 {
+    margin-bottom: 40px;
   }
 
   .social h4 {

@@ -70,3 +70,24 @@
     line-height: 1.5em;
   }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1920px) {
+  .contact h2 {
+    padding-top: 2rem;
+  }
+  .contact > button {
+    margin: 1.5rem;
+    font-size: 0.75rem;
+    padding: 15px;
+  }
+  .contact > * {
+    max-width: 30%;
+  }
+  .contact p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+  .contact hr {
+    margin: 0.75rem;
+  }
+}

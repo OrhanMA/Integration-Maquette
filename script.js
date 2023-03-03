@@ -60,8 +60,11 @@ document.addEventListener("scroll", function () {
       desktopNav[i].style.color = "white";
     }
     headerLogo.style.color = "white";
-    hamburger.style.backgroundColor = "";
-    navLinks.style.backgroundColor = "#444444";
+    // hamburger.style.backgroundColor = "";
+    hamburger.style.backgroundColor = "#ffc700";
+    hamburger.style.borderRadius = "5px";
+    hamburger.style.padding = "5px";
+    navLinks.style.backgroundColor = "";
     for (let i = 0; i < headerNavText.length; i++) {
       headerNavText[i].style.color = "white";
     }
