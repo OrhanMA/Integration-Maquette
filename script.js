@@ -12,6 +12,11 @@ menuIcon.addEventListener("click", () => {
   }
 });
 
+const dropdownMenu = document.querySelector(".dropdown-menu");
+dropdownMenu.addEventListener("click", () => {
+  navLinks.style.opacity = "0";
+});
+
 const surprise1 = document.querySelector(".surprise-1");
 surprise1.addEventListener("click", () => {
   window.open("https://motherfuckingwebsite.com/", "_blank").focus();
@@ -56,6 +61,7 @@ document.addEventListener("scroll", function () {
   } else {
     header.style.backgroundColor = "";
     header.style.boxShadow = "none";
+    navLinks.style.opacity = "0";
     for (let i = 0; i < desktopNav.length; i++) {
       desktopNav[i].style.color = "white";
     }
