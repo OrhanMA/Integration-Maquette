@@ -60,7 +60,6 @@ document.addEventListener("scroll", function () {
       desktopNav[i].style.color = "white";
     }
     headerLogo.style.color = "white";
-    // hamburger.style.backgroundColor = "";
     hamburger.style.backgroundColor = "#ffc700";
     hamburger.style.borderRadius = "5px";
     hamburger.style.padding = "5px";
