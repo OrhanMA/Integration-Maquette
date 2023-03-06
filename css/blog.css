@@ -76,6 +76,14 @@
   padding-top: 5rem;
 }
 
+.blog-nav > button > p {
+  margin: 0;
+}
+
+.article-title:hover {
+  color: #60c5d2;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .blog-title > h2 {
     font-size: 1.3rem;

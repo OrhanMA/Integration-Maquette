@@ -200,14 +200,14 @@
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
           eveniet vero perspiciatis dolores.
         </p>
-        <h3>Richard Beal</h3>
-        <p>CSS Developer</p>
+        <h3 class="quote-author">Richard Beal</h3>
+        <p class="quote-job">CSS Developer</p>
 
         <div class="circle-container">
-          <div class="tiny-circle"></div>
-          <div class="tiny-circle"></div>
-          <div class="tiny-circle"></div>
-          <div class="tiny-circle"></div>
+          <div id="circle1" class="tiny-circle"></div>
+          <div id="circle2" class="tiny-circle"></div>
+          <div id="circle3" class="tiny-circle"></div>
+          <div id="circle4" class="tiny-circle"></div>
         </div>
       </section>
       <section id="blog" class="blog">
@@ -222,28 +222,22 @@
           </div>
           <nav class="blog-nav">
             <button class="cliquable">
-              <a
-                class="yellow-letter"
-                target="_blank"
-                href="http://www.google.com"
-              >
-                Lorem Ipsum Dolor sit</a
-              >
+              <p class="yellow-letter blog-button-1">
+                Comment devenir développeur web?
+              </p>
             </button>
             <button class="cliquable">
-              <a href="http://www.google.com" target="_blank"
-                >Quisque Ultricies Maximus
-              </a>
+              <p class="blog-button-2">Compétences clefs pour développeurs</p>
             </button>
             <button class="cliquable">
-              <a href="http://www.google.com" target="_blank"
-                >Sed Vel Elit Et Lorem</a
-              >
+              <p class="blog-button-3">
+                Pourquoi les développeurs détestent PHP?
+              </p>
             </button>
             <button class="cliquable">
-              <a href="http://www.google.com" target="_blank"
-                >Vivamus Purus Neque</a
-              >
+              <p class="blog-button-4">
+                Ce que personne ne te dira sur le métier de développeur
+              </p>
             </button>
           </nav>
         </div>
@@ -251,19 +245,30 @@
         <div class="blog-article">
           <img
             class="blog-image"
-            src="./assets/blog_item_01.jpg"
+            src="./assets/starwars.jpeg"
             alt="un couple marchant sur le trottoire"
           />
           <div>
-            <h3>Lorem ipsum dolo sit amet</h3>
-            <p class="blue blog-blue">
-              Digital Marketing / John / 22 September 2017
+            <h3 class="article-title">
+              <a
+                id="article-title-link"
+                href="https://www.jesuisundev.com/comment-devenir-developpeur-web/"
+                target="_blank"
+                >Comment devenir un développeur web?</a
+              >
+            </h3>
+            <p
+              class="blog-button-4 blue blog-blue article-infos"
+              target="_blank"
+            >
+              Je suis un dev / Emploi / 6 Janvier 2020
             </p>
-            <p class="gray-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              enim saepe repellendus consectetur corporis accusantium nihil et
-              culpa, est ex nemo dolorum itaque asperiores. Nulla illum et
-              similique! Nobis, facilis!
+            <p class="gray-text article-resume">
+              Comment devenir développeur web ? C’est la question que je reçois
+              dans 80 % des milliers d’e-mails que je reçois. Si c’est une
+              question que tu te poses toi aussi, t’es au bon endroit. Oui,
+              crois-moi, tu es capable ! Il est temps d’oser et de te lancer.
+              Aujourd’hui, je vais t’expliquer comment faire.
             </p>
           </div>
         </div>
