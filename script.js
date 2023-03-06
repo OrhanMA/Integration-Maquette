@@ -2,13 +2,13 @@
 
 const menuIcon = document.querySelector(".dropdown");
 const navLinks = document.querySelector(".header-nav");
-navLinks.style.display = "none";
+// navLinks.style.display = "none";
 menuIcon.addEventListener("click", () => {
   console.log("clicked");
-  if (navLinks.style.display === "none") {
-    navLinks.style.display = "block";
+  if (navLinks.style.opacity == "0") {
+    navLinks.style.opacity = "1";
   } else {
-    navLinks.style.display = "none";
+    navLinks.style.opacity = "0";
   }
 });
 
