@@ -55,6 +55,8 @@ document.addEventListener("scroll", function () {
     hamburger.style.backgroundColor = "#ffc700";
     hamburger.style.borderRadius = "5px";
     navLinks.style.backgroundColor = "white";
+    navLinks.style.borderTop = "solid 1px lightgray";
+    /* border-top: solid 1px lightgray; */
     for (let i = 0; i < headerNavText.length; i++) {
       headerNavText[i].style.color = "black";
     }
