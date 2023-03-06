@@ -94,74 +94,62 @@ const pic4 = document.querySelector("#pic4");
 const pic5 = document.querySelector("#pic5");
 const pic6 = document.querySelector("#pic6");
 
+function removeYellow(...elements) {
+  for (let element of elements) {
+    element.classList.remove("yellow-letter");
+  }
+}
+
+function addYellow(...elements) {
+  for (let element of elements) {
+    element.classList.add("yellow-letter");
+  }
+}
+
+function displayElement(display, ...elements) {
+  for (let element of elements) {
+    element.style.display = display;
+  }
+}
+
 showAllButton.addEventListener("click", () => {
-  showAllButton.classList.add("yellow-letter");
-  brandingButton.classList.remove("yellow-letter");
-  graphicButton.classList.remove("yellow-letter");
-  natureButton.classList.remove("yellow-letter");
-  animationButton.classList.remove("yellow-letter");
-  pic1.style.display = "block";
-  pic2.style.display = "block";
-  pic3.style.display = "block";
-  pic4.style.display = "block";
-  pic5.style.display = "block";
-  pic6.style.display = "block";
+  addYellow(showAllButton);
+
+  removeYellow(brandingButton, graphicButton, natureButton, animationButton);
+
+  displayElement("block", pic1, pic2, pic3, pic4, pic5, pic6);
 });
 
 brandingButton.addEventListener("click", () => {
-  brandingButton.classList.add("yellow-letter");
-  showAllButton.classList.remove("yellow-letter");
-  graphicButton.classList.remove("yellow-letter");
-  natureButton.classList.remove("yellow-letter");
-  animationButton.classList.remove("yellow-letter");
-  pic1.style.display = "none";
-  pic2.style.display = "none";
-  pic3.style.display = "block";
-  pic4.style.display = "none";
-  pic5.style.display = "block";
-  pic6.style.display = "none";
+  addYellow(brandingButton);
+  removeYellow(showAllButton, graphicButton, natureButton, animationButton);
+
+  displayElement("block", pic3, pic5);
+  displayElement("none", pic1, pic2, pic4, pic6);
 });
 
 graphicButton.addEventListener("click", () => {
-  graphicButton.classList.add("yellow-letter");
-  showAllButton.classList.remove("yellow-letter");
-  brandingButton.classList.remove("yellow-letter");
-  natureButton.classList.remove("yellow-letter");
-  animationButton.classList.remove("yellow-letter");
-  pic1.style.display = "none";
-  pic2.style.display = "none";
-  pic3.style.display = "none";
-  pic4.style.display = "block";
-  pic5.style.display = "none";
-  pic6.style.display = "block";
+  addYellow(graphicButton);
+  removeYellow(showAllButton, brandingButton, natureButton, animationButton);
+
+  displayElement("block", pic4, pic6);
+  displayElement("none", pic1, pic2, pic3, pic5);
 });
 
 natureButton.addEventListener("click", () => {
-  natureButton.classList.add("yellow-letter");
-  showAllButton.classList.remove("yellow-letter");
-  brandingButton.classList.remove("yellow-letter");
-  graphicButton.classList.remove("yellow-letter");
-  animationButton.classList.remove("yellow-letter");
-  pic1.style.display = "block";
-  pic2.style.display = "none";
-  pic3.style.display = "block";
-  pic4.style.display = "none";
-  pic5.style.display = "none";
-  pic6.style.display = "none";
+  addYellow(natureButton);
+  removeYellow(showAllButton, brandingButton, graphicButton, animationButton);
+
+  displayElement("block", pic1, pic3);
+  displayElement("none", pic2, pic4, pic5, pic6);
 });
 
 animationButton.addEventListener("click", () => {
-  animationButton.classList.add("yellow-letter");
-  showAllButton.classList.remove("yellow-letter");
-  brandingButton.classList.remove("yellow-letter");
-  graphicButton.classList.remove("yellow-letter");
-  natureButton.classList.remove("yellow-letter");
-  pic1.style.display = "none";
-  pic2.style.display = "block";
-  pic3.style.display = "none";
-  pic4.style.display = "none";
-  pic5.style.display = "none";
-  pic6.style.display = "block";
+  addYellow(animationButton);
+  removeYellow(showAllButton, brandingButton, graphicButton, natureButton);
+
+  displayElement("block", pic2, pic6);
+  displayElement("none", pic1, pic3, pic4, pic5);
 });
 
 // Dom manipulation for quote section
@@ -222,10 +210,8 @@ const blogButton3 = document.querySelector(".blog-button-3");
 const blogButton4 = document.querySelector(".blog-button-4");
 
 blogButton1.addEventListener("click", () => {
-  blogButton1.classList.add("yellow-letter");
-  blogButton2.classList.remove("yellow-letter");
-  blogButton3.classList.remove("yellow-letter");
-  blogButton4.classList.remove("yellow-letter");
+  addYellow(blogButton1);
+  removeYellow(blogButton2, blogButton3, blogButton4);
   blogImage.src = "assets/starwars.jpeg";
   articleTitle.textContent = "Comment devenir développeur web?";
   articleLink.href =
@@ -239,10 +225,8 @@ blogButton1.addEventListener("click", () => {
 });
 
 blogButton2.addEventListener("click", () => {
-  blogButton2.classList.add("yellow-letter");
-  blogButton1.classList.remove("yellow-letter");
-  blogButton3.classList.remove("yellow-letter");
-  blogButton4.classList.remove("yellow-letter");
+  addYellow(blogButton2);
+  removeYellow(blogButton1, blogButton3, blogButton4);
   blogImage.src = "assets/robot.jpeg";
   articleTitle.textContent = "Compétences clefs pour développeurs";
   articleLink.href =
@@ -253,10 +237,8 @@ blogButton2.addEventListener("click", () => {
 });
 
 blogButton3.addEventListener("click", () => {
-  blogButton3.classList.add("yellow-letter");
-  blogButton1.classList.remove("yellow-letter");
-  blogButton2.classList.remove("yellow-letter");
-  blogButton4.classList.remove("yellow-letter");
+  addYellow(blogButton3);
+  removeYellow(blogButton1, blogButton2, blogButton4);
   blogImage.src = "assets/PHPMeme.jpeg";
   articleTitle.textContent = "Pourquoi les développeurs détestent PHP";
   articleLink.href =
@@ -266,10 +248,8 @@ blogButton3.addEventListener("click", () => {
 });
 
 blogButton4.addEventListener("click", () => {
-  blogButton4.classList.add("yellow-letter");
-  blogButton1.classList.remove("yellow-letter");
-  blogButton2.classList.remove("yellow-letter");
-  blogButton3.classList.remove("yellow-letter");
+  addYellow(blogButton4);
+  removeYellow(blogButton1, blogButton2, blogButton3);
   blogImage.src = "assets/surprise.jpeg";
   articleTitle.textContent =
     "Ce que personne ne te dira sur le métier de développeur";
