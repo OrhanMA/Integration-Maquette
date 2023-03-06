@@ -10,7 +10,6 @@
   text-align: center;
   align-items: center;
   padding-top: 22rem;
-  /* padding-bottom: 5rem; */
   height: 100vh;
 }
 
@@ -22,7 +21,6 @@
 .home > p {
   font-size: 0.9rem;
   line-height: 1.5rem;
-  /* margin: 5rem; */
 }
 
 .home > * {
@@ -58,13 +56,13 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 991) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .features {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .home * {
     max-width: 30%;
   }

@@ -9,6 +9,7 @@
   background-size: cover;
   background-attachment: fixed;
   color: white;
+  box-sizing: border-box;
 }
 
 .circle {
@@ -109,18 +110,21 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .features {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     padding: 15% 10% 15% 10%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
   .features-unit {
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding-bottom: 5rem;
   }
   .features-text > h3 {
     font-size: 1rem;
@@ -144,15 +148,15 @@
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1920px) {
+@media screen and (min-width: 992px) {
   .features {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 75vh;
-    padding: 0;
+    /* height: 100vh; */
+    padding: 5rem;
   }
 
   .features-unit {

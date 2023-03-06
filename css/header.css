@@ -85,7 +85,7 @@
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1920px) {
+@media screen and (min-width: 992px) {
   .header-nav,
   .menu-icon {
     display: none;
@@ -103,7 +103,6 @@
   }
 
   .header {
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
   }
