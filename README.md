@@ -12,3 +12,4 @@ l'accessibilité ainsi que le référencement.
 Ressources:
 Maquette intégrée: https://templatemo.com/live/templatemo_506_tinker
 Icon hamburger menu: https://icones8.fr/icon/36389/menu-arrondi
+Articles pour la partie blog: https://www.jesuisundev.com/
